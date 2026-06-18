@@ -67,3 +67,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+out.*
+wall.jpeg
+test_imgs/
+.DS_Store
