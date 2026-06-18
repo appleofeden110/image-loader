@@ -71,3 +71,5 @@ out.*
 wall.jpeg
 test_imgs/
 .DS_Store
+
+loader
