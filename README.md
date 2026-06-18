@@ -47,9 +47,22 @@ After installing zlib, simply use clang to compile:
 clang -lz loader.c -o loader
 ```
 ### Usage
+##### Library
+Simply use it to process needed png or jpeg (coming soon) file like so:
+```cpp
+int width, height, nrChannels;
+uint8_t *tex_pixels = process_png("./assets/test.png", &width, &height, &nrChannels);
+```
+Which will output the raw pixels to use for graphical output.
 
+##### Direct testing
+Although this is meant like a library, you can test it by calling it like so:
 ```bash
 ./loader test.png
 open out.ppm
 ```
+PPM is the easiest file output possible, without any compression, so it shows the raw bytes perfectly.
 
+## Contact
+
+I am available on [LinkedIn](https://www.linkedin.com/in/nazar-kaniuka-326437231/) or by [Email](mailto:nazarkaniuka6@gmail.com)
