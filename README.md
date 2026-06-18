@@ -55,6 +55,12 @@ uint8_t *tex_pixels = process_png("./assets/test.png", &width, &height, &nrChann
 ```
 Which will output the raw pixels to use for graphical output.
 
+Also don't forget to free the pixels.
+
+```cpp
+free(tex_pixels);
+```
+
 ##### Direct testing
 Although this is meant like a library, you can test it by calling it like so:
 ```bash
