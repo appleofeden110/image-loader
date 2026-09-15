@@ -73,3 +73,5 @@ test_imgs/
 .DS_Store
 
 loader
+
+.zed/
